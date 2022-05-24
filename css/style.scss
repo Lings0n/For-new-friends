@@ -18,12 +18,7 @@ body{
     flex-direction: column;  
     justify-content: space-between;   
 }
-.main{
-    
-}
-.first_block{
-    
-}
+
 .container{
     max-width: 500px;
     margin: 0 auto;
@@ -148,7 +143,7 @@ body{
     width: 100%;
     & .place-for-qr-code{
         padding: 15px;
-        background-color: #FFFFFF;
+        background-color: #ffffff;
         height: 160px;
         width: 160px;
         & img{
@@ -162,7 +157,6 @@ body{
     padding-bottom: 18px;
     padding-top: 65px;
     padding-right: 8px;
-    
 }
 
 @media(max-width :850px){
