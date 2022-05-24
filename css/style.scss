@@ -1,0 +1,222 @@
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+//
+//file nullstyle
+@import "nullstyle.scss";
+//
+
+body{
+    font-family: 'Hubballi', cursive;
+    color: #ffffff;
+    font-size: 1.9rem;
+    min-width: 260px;
+    background-color: #1B2735;
+}
+.wrapper{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;  
+    justify-content: space-between;   
+}
+.main{
+    
+}
+.first_block{
+    
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.name{
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.8em;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 47px;
+    margin-bottom: 55px;
+    padding: 0 28px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-size: 1em;
+    width: 100%;
+}
+.contacts-title{
+    width: 100%;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 1.6em;
+}
+.place-for-contacts{
+    width: 90%;
+    display: flex;
+    margin: 0 30px;
+    border-bottom: #cfcfe6 1px solid;
+    border-top: #cfcfe6 1px solid;
+}
+.contacts-list{
+    font-size: 1.07em;
+    width: 100%;
+    & li{
+        display: flex;
+        justify-content: left;
+        padding-left: 40px;
+        align-items: center;
+        height: 50px;
+        color: #ffffffcc;
+        &:first-child{
+            margin-top: 20px;
+        }
+        &:last-child{
+            margin-bottom: 20px;
+        }
+        & a{  
+            display: flex;
+            align-items: center; 
+            color: #ffffffcc;
+            &:hover{
+                color:#ffffff;
+                span{
+                    background-color: #fff;
+                }
+                .tel-number{
+                    color: #fff;
+                    span{
+                        background-color: #fff;
+                    }
+                }
+            }
+            &:active{
+                color: #999797;
+                text-decoration: underline;
+                span{
+                    background-color: #999797;
+                }
+                .tel-number{
+                    color: #999797;
+                    text-decoration: underline;
+                    span{
+                        background-color: #999797;
+                    }
+                }
+            }
+            & span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 40px;
+                width: 40px;
+                margin-right: 15px;
+                background-color: #ffffffcc;
+                border-radius: 100px;
+                & img{
+                    height: 33px;
+                    width: 33px;
+                }
+            }
+        
+        }
+    }
+}
+.tel-number{
+    font-size: 0.85em;
+    &:hover{
+        color: #fff;
+        span{
+            background-color: #fff;
+        }
+    }
+    &:active{
+        color: #999797;
+        text-decoration: underline;
+        span{
+            background-color: #999797;
+        }
+    }
+}
+.e-mail{
+    font-size: 0.85em;
+}
+.qr-code{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    & .place-for-qr-code{
+        padding: 15px;
+        background-color: #ece1e1   ;
+        height: 160px;
+        width: 160px;
+        & img{
+            max-height: 100%;
+        }
+    }
+}
+.footer{
+    font-size: 1.3em;
+    text-align: center;
+    padding-bottom: 18px;
+    padding-top: 65px;
+    padding-right: 8px;
+    
+}
+
+@media(max-width :850px){
+    body{
+        font-size: 1.6rem;
+    }
+    .contacts-list{
+        & li{
+            & a{  
+                & span{
+                    height: 33px;
+                    width: 33px;
+                    & img{
+                        height: 28px;
+                        width: 28px;
+                    }
+                }
+            }
+        }
+    } 
+    .footer{
+        padding-bottom: 20px;
+    }
+}
+@media(max-width :600px){
+    body{
+        font-size: 1.4rem;
+    }
+    .contacts-list{
+        & li{
+            & a{  
+                & span{
+                    height: 30px;
+                    width: 30px;
+                    & img{
+                        height: 25px;
+                        width: 25px;
+                    }
+                }
+            }
+        }
+    }  
+}
+
+@media(max-width :400px){
+    .contacts-list{
+        & li{
+            padding-left: 5px;
+            & a{  
+                & span{
+                    margin-right: 7px;
+                }
+            }
+        }
+    }
+
+}
